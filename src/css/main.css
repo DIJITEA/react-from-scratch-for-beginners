@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +7,9 @@
 body{
     background-color: rgb(201, 57, 0);
     color: azure;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
 }
 .header{
     display: flex;
@@ -12,7 +17,27 @@ body{
     align-items: center;
     height: 90px;
     border-bottom: 5px solid azure;
+    font-weight: 600;
+    font-size: 50px;
+    
 }
 .header__img{
+    margin-left: 30px;
     height: 100px;
+}
+article{
+    margin: 50px 100px;
+    width: 50%;
+    float: left;
+}
+aside{
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 5%;
+    float: left;
+}
+article .user{
+    margin-bottom: 50px;
+    background-color: cadetblue;
+    padding: 20px;
 }
