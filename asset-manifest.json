@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-from-scratch-for-beginners/static/css/main.b1dc759d.css",
+    "main.css": "/react-from-scratch-for-beginners/static/css/main.b83c099a.css",
     "main.js": "/react-from-scratch-for-beginners/static/js/main.9855126a.js",
     "static/media/cat.png": "/react-from-scratch-for-beginners/static/media/cat.bef82a80a97332d8d1bd.png",
     "index.html": "/react-from-scratch-for-beginners/index.html",
-    "main.b1dc759d.css.map": "/react-from-scratch-for-beginners/static/css/main.b1dc759d.css.map",
+    "main.b83c099a.css.map": "/react-from-scratch-for-beginners/static/css/main.b83c099a.css.map",
     "main.9855126a.js.map": "/react-from-scratch-for-beginners/static/js/main.9855126a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1dc759d.css",
+    "static/css/main.b83c099a.css",
     "static/js/main.9855126a.js"
   ]
 }
