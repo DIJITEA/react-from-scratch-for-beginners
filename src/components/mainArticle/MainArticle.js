@@ -5,16 +5,22 @@ class MainArticle extends React.Component {
     super(props)
     this.state = {
       helpText:"Help text",
+      userData: "no Data"
     }
     this.inputClick = this.inputClick.bind(this)
   }
-  
+  componentDidUpdate(prevProp){
+    if (this.state.helpText !== "Help")
+      console.log("Some")
+  }
   render() {
     return (
       <article>
         <h1>{this.state.helpText}</h1>
+        <h2>{this.state.userData}</h2>
         <input
           placeholder={this.state.helpText}
+          onChange={event => this.setState({userData: event.target.value})}
           onClick={this.inputClick}
           onMouseEnter={this.mouseOver}
         />

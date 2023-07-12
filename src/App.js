@@ -6,7 +6,7 @@ import MainArticle from "./components/mainArticle/MainArticle";
 class App extends React.Component {
   render() {
     return <div>
-      <Header />
+      <Header title= {"Header"} />
         <h2>App component</h2>
       <MainArticle />
     </div>;
