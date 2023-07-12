@@ -1,6 +1,7 @@
 import React from "react";
 
 class AddUser extends React.Component {
+  userAdd = {};
   constructor(props) {
     super(props);
     this.state = {
@@ -13,7 +14,11 @@ class AddUser extends React.Component {
   }
   render() {
     return (
-      <form>
+      <form
+        ref={(el) => {
+          this.myForm = el;
+        }}
+      >
         <input
           placeholder="firstname"
           onChange={(e) => this.setState({ firstname: e.target.value })}
@@ -38,15 +43,19 @@ class AddUser extends React.Component {
         />
         <button
           type="button"
-          onClick={() =>
-            this.props.onAdd({
+          onClick={() => {
+            this.myForm.reset();
+            this.userAdd = {
               firstname: this.state.firstname,
               lastname: this.state.lastname,
               bio: this.state.bio,
               age: this.state.age,
               isHappy: this.state.isHappy,
-            })
-          }
+            };
+            if(this.props.user)
+                this.userAdd.id = this.props.user.id
+            this.props.onAdd(this.userAdd);
+          }}
         >
           Add User
         </button>

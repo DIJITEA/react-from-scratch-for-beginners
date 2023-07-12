@@ -30,34 +30,36 @@ article {
   margin: 50px 100px;
   width: 80%;
 }
-.users__list{
-    width: 50%;
+.users__list {
+  width: 50%;
 }
 aside {
   width: 20%;
 }
-aside form input:not([type="checkbox"]), aside form textarea, aside form button{
-    width: 90%;
-    padding: 15px 5%;
-    font-family: "Belanosima", sans-serif;
-    font-weight: 400;
-    margin-bottom: 10px;
-    border: 0;
-    background: cadetblue;
-    color: #ffffff;
-    font-size: 15px;
+form input:not([type="checkbox"]),
+form textarea,
+form button {
+  width: 90%;
+  padding: 15px 5%;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  border: 0;
+  background: cadetblue;
+  color: #ffffff;
+  font-size: 15px;
 }
-aside form input[type="checkbox"]{
-    margin: 10px;
+form input[type="checkbox"] {
+  margin: 10px;
 }
-aside form button{
-    width: 100%;
-    cursor: pointer;
-    transition: transform 0.5s ease;
+form button {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
-aside form button:hover {
-    transform: scale(1.1);
+form button:hover {
+  transform: scale(1.1);
 }
 
 article .user {
@@ -80,4 +82,17 @@ article .edit-icon {
 article .delete-icon:hover,
 article .edit-icon:hover {
   opacity: 0.5;
+}
+
+.user form {
+  margin-top: 20px;
+}
+.user form input,
+.user form textarea,
+.user form button {
+  background-color: rgb(255, 243, 243);
+  color: black;
+}
+.user form button:hover{
+    transform: scale(1.03);
 }
