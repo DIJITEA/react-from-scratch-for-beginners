@@ -1,43 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: rgb(201, 57, 0);
-    color: azure;
-    font-family: 'Belanosima', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
+body {
+  background-color: rgb(201, 57, 0);
+  color: azure;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
 }
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-    border-bottom: 5px solid azure;
-    font-weight: 600;
-    font-size: 50px;
-    
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border-bottom: 5px solid azure;
+  font-weight: 600;
+  font-size: 100%;
 }
-.header__img{
-    margin-left: 30px;
-    height: 100px;
+.header__img {
+  margin-left: 30px;
+  height: 100px;
 }
-article{
-    margin: 50px 100px;
+article {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 100px;
+  width: 80%;
+}
+.users__list{
     width: 50%;
-    float: left;
 }
-aside{
-    width: 20%;
-    margin-top: 50px;
-    margin-left: 5%;
-    float: left;
+aside {
+  width: 20%;
 }
-article .user{
-    margin-bottom: 50px;
-    background-color: cadetblue;
-    padding: 20px;
+aside form input:not([type="checkbox"]), aside form textarea, aside form button{
+    width: 90%;
+    padding: 15px 5%;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border: 0;
+    background: cadetblue;
+    color: #ffffff;
+    font-size: 15px;
+}
+aside form input[type="checkbox"]{
+    margin: 10px;
+}
+aside form button{
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+aside form button:hover {
+    transform: scale(1.1);
+}
+
+article .user {
+  margin-bottom: 50px;
+  background-color: cadetblue;
+  padding: 20px;
+}
+article .delete-icon {
+  float: right;
+
+  cursor: pointer;
+  transform: scale(2);
+}
+article .edit-icon {
+  float: right;
+  margin-right: 35px;
+  cursor: pointer;
+  transform: scale(2);
+}
+article .delete-icon:hover,
+article .edit-icon:hover {
+  opacity: 0.5;
 }
