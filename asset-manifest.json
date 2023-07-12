@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-from-scratch-for-beginners/static/css/main.b83c099a.css",
-    "main.js": "/react-from-scratch-for-beginners/static/js/main.9855126a.js",
+    "main.css": "/react-from-scratch-for-beginners/static/css/main.8bde49f4.css",
+    "main.js": "/react-from-scratch-for-beginners/static/js/main.b4a0843a.js",
     "static/media/cat.png": "/react-from-scratch-for-beginners/static/media/cat.bef82a80a97332d8d1bd.png",
     "index.html": "/react-from-scratch-for-beginners/index.html",
-    "main.b83c099a.css.map": "/react-from-scratch-for-beginners/static/css/main.b83c099a.css.map",
-    "main.9855126a.js.map": "/react-from-scratch-for-beginners/static/js/main.9855126a.js.map"
+    "main.8bde49f4.css.map": "/react-from-scratch-for-beginners/static/css/main.8bde49f4.css.map",
+    "main.b4a0843a.js.map": "/react-from-scratch-for-beginners/static/js/main.b4a0843a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b83c099a.css",
-    "static/js/main.9855126a.js"
+    "static/css/main.8bde49f4.css",
+    "static/js/main.b4a0843a.js"
   ]
 }
