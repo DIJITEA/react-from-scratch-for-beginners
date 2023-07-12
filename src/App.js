@@ -7,7 +7,6 @@ class App extends React.Component {
     return (
       <div>
         <Header title={"Users List"} />
-        <h2>App component</h2>
         <MainArticle />
       </div>
     );

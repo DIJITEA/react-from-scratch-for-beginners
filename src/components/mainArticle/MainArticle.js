@@ -1,33 +1,27 @@
 import React from "react";
 import Users from "../users/Users";
 import AddUser from "../users/AddUser";
+import axios from "axios";
+
+const baseUrl = "https://reqres.in/api/users?page=1";
+
 class MainArticle extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      users: [
-        {
-          id: 1,
-          firstname: "Simon",
-          lastname: "Cat",
-          bio: `love to eat`,
-          age: 6,
-          isHappy: true,
-        },
-        {
-          id: 2,
-          firstname: "not Simon",
-          lastname: "not Cat",
-          bio: `love to eat`,
-          age: 7,
-          isHappy: false,
-        },
-      ],
+      users: [],
     };
     this.addUser = this.addUser.bind(this);
     this.deleteUser = this.deleteUser.bind(this);
     this.editUser = this.editUser.bind(this);
   }
+  componentDidMount() {
+    axios.get(baseUrl).then((res) => {
+      this.setState({ users: res.data.data });
+    });
+  }
+
   render() {
     return (
       <article>
